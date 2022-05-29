@@ -1,0 +1,52 @@
+#side_left a{
+    text-decoration: none;
+    color: white;
+}
+#side_left a:hover{
+    color: #157347;
+}
+.slanted:hover{
+    transform: translate3d(0,2px,0);
+}
+
+.buttons{
+    border-radius: 0px;
+    border: 1px black solid;
+    transition: all .3s ease;
+    box-shadow: 11px 11px 2px -3px black;
+}
+
+.buttons:hover{
+    border-radius: 0px;
+    border: 1px black solid;
+    transform: translate3d(0,2px,0);
+    box-shadow: 3px 3px 0px -3px black;
+}
+
+.overflowy-scroll{
+    overflow-y: auto;
+}
+.textarea-holder{
+    border: 1px solid black;
+    padding: 1rem 0 1rem 0;
+}
+.textarea-holder > textarea{
+    outline: none;
+    width: 75%;
+    resize: none;
+    white-space: nowrap;
+}
+
+.textarea-holder > .buttons::after{
+    content: "\f733";
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -0.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
