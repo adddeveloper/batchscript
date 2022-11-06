@@ -11,10 +11,18 @@ if(next){
         tittle.innerHTML.split(" || ")[(tittle.innerHTML.split(" || ").length)-1]
     )+1) + ".html";
     next.addEventListener("click", ()=>{
-        if(anchorn.click()){
-            anchorn.click();
-        } else if(anchorn.focus()){
-            anchorn.focus();
+        if(document.getElementById("side_left") && (document.getElementById("side_left").children.length - 1)>(parseInt(tittle.innerHTML.split(" || ")[(tittle.innerHTML.split(" || ").length)-1])+1)){
+            if(anchorn.click()){
+                anchorn.click();
+            } else if(anchorn.focus()){
+                anchorn.focus();
+            } 
+        } else if(!(document.getElementById("side_left"))){
+            if(anchorn.click()){
+                anchorn.click();
+            } else if(anchorn.focus()){
+                anchorn.focus();
+            } 
         }
     })
 }
