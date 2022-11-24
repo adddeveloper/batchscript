@@ -1,3 +1,7 @@
+// favicon
+document.querySelector("head").innerHTML +="<!-- favicon -->";
+document.querySelector("head").innerHTML +="<!-- favicon -->";
+
 // next & prev.
 
 const next = document.getElementById("next");
