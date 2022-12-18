@@ -12,20 +12,20 @@ buttonCopy.forEach((el, index)=>{
 });
 
 var sideBar = document.getElementById("side_left");
+sideBar.classList.toggle("align-items-center");
 // sideBar.parentElement.style.boxShadow ="4px 3px 19px 0px";
 sideBar.innerHTML +=
-'<a class="px-3" href="/index.html">Home</a>'+
-'<a class="px-3" href="/lessons/1.html">Introduction</a>'+
-'<a class="px-3" href="/lessons/2.html">Setup</a>'+
-'<a class="px-3" href="/lessons/3.html">Resources</a>'+
-'<a class="px-3" href="/lessons/4.html">Open Start</a>'+
-'<a class="px-3" href="/lessons/5.html">Disc</a>'+
-'<a class="px-3" href="/lessons/6.html">Keyboard</a>'+
-'<a class="px-3" href="/lessons/7.html">Shutdown</a>'+
-'<a class="px-3" href="/lessons/8.html">Delete Start-up Files</a>'+
-'<a class="px-3" href="/lessons/9.html">Mouse</a>'+
-'<a class="px-3" href="/lessons/10.html">CPU</a>'+
-'<a class="px-3" href="/lessons/help.html">Help</a>';
+'<a class="px-2 py-1" href="/index.html">Home</a>'+
+'<a class="px-2 py-1" href="/lessons/1.html">Introduction</a>'+
+'<a class="px-2 py-1" href="/lessons/2.html">How to setup Environment?</a>'+
+'<a class="px-2 py-1" href="/lessons/3.html">Where to learn Batch Script?</a>'+
+'<a class="px-2 py-1" href="/lessons/4.html">How to open hundred of windows?</a>'+
+'<a class="px-2 py-1" href="/lessons/5.html">How to open disk drive?</a>'+
+'<a class="px-2 py-1" href="/lessons/6.html">How to trigger keyboard events?</a>'+
+'<a class="px-2 py-1" href="/lessons/7.html">How to shutdown/restart computer?</a>'+
+'<a class="px-2 py-1" href="/lessons/8.html">How to create files?</a>'+
+'<a class="px-2 py-1" href="/lessons/9.html">How to use CPU?</a>'+
+'<a class="px-2 py-1" href="/lessons/help.html">Help?</a>';
 document.getElementById("in_out").classList = "text-nowrap px-3 buttons m-0 btn-success py-0";
 document.getElementById("in_out").style.boxShadow = "0px 0px 0px 0px !important";
 document.getElementById("in_out").addEventListener("click",()=>{
